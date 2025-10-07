@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Google Clone</title>
+	<style>
+		body {
+			background: #fff;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		.google-img {
+			margin: 40px auto 20px auto;
+			display: block;
+			max-width: 300px;
+		}
+		.search-box {
+			width: 100%;
+			max-width: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		input[type="text"] {
+			width: 100%;
+			max-width: 400px;
+			padding: 12px 20px;
+			font-size: 18px;
+			border: 1px solid #dfe1e5;
+			border-radius: 24px;
+			outline: none;
+			margin-bottom: 24px;
+			box-sizing: border-box;
+		}
+		.buttons {
+			display: flex;
+			gap: 10px;
+		}
+		button {
+			background: #f8f9fa;
+			border: 1px solid #f8f9fa;
+			border-radius: 4px;
+			color: #3c4043;
+			font-size: 16px;
+			padding: 10px 20px;
+			cursor: pointer;
+			transition: box-shadow 0.2s;
+		}
+		button:hover {
+			box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+			border: 1px solid #dadce0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img class="google-img" src="https://imgs.search.brave.com/Und9YTXGdDWJ-IJB62I1SwDWHWcTFcVTSjmegN4Dqqk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2ZmLzZi/LzdlL2ZmNmI3ZWI3/Yzc1MmUzMTYxZmUw/MmVjMzZlZGU4YmJk/LmpwZw" alt="Google Logo">
+		<form class="search-box">
+			<input type="text" placeholder="Search Google or type a URL" size="50">
+			<div class="buttons">
+				<button type="submit">Google Search</button>
+				<button type="button">I'm Feeling Lucky</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
